@@ -13,7 +13,8 @@ export default function Navbar() {
   return (
     <header className="topbar">
       <Link to={user ? "/dashboard" : "/login"} className="brand">
-        Expense Tracker
+        <img className="brand-logo" src="/expense-tracker.svg" alt="" aria-hidden="true" />
+        <span>Expense Tracker</span>
       </Link>
       {user ? (
         <nav className="nav-links">
